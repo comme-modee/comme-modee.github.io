@@ -7,10 +7,41 @@ let underline = document.getElementById("underline");
 let todaysDate = document.querySelector(".title-date");
 let todaysWeather = document.querySelector(".title-weather");
 
-
 let taskList = [];
 let ongoingList = [];
 let doneList = [];
+
+//날씨 정보 받아오기
+const API_key = '038c64f24b5e0e3aa10dd513abbdaf98';
+
+const getWeather = async (lat, lon) => {
+    try {
+        let url = new URL(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}`);
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        let weather = data.weather[0].main;
+        todaysWeather.innerHTML = `<img src="img/weather-icon/${weather}.png" alt="날씨아이콘" title="${weather}">`;
+    } catch(error) {
+        console.error("Error fetching weather data:", error);
+    }
+}
+
+navigator.geolocation.getCurrentPosition( async (position) => {
+    let { latitude: lat, longitude: lon } = position.coords;
+    await getWeather(lat, lon);
+});
+
+//오늘 날짜 받아오기
+const today = new Date();
+const year = today.getFullYear();
+const month = (today.getMonth() + 1).toString().padStart(2, '');
+const day = today.getDate().toString().padStart(2, '');
+
+todaysDate.innerHTML = `<p class="year">${year}</p><p class="date">${month}/${day}</p>`
+
 
 inputAddBtn.addEventListener("click", addTask);
 window.addEventListener("keydown", (e) => {
@@ -156,35 +187,3 @@ function underlineSlide(e) {
 function randomIDGenerate(){
     return '_' + Math.random().toString(36).substring(2,9);
 }
-
-
-//날씨 정보 받아오기
-const API_key = '038c64f24b5e0e3aa10dd513abbdaf98';
-
-const getWeather = async (lat, lon) => {
-    try {
-        let url = new URL(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}`);
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const data = await response.json();
-        let weather = data.weather[0].main;
-        todaysWeather.innerHTML = `<img src="img/weather-icon/${weather}.png" alt="날씨아이콘" title="${weather}">`;
-    } catch(error) {
-        console.error("Error fetching weather data:", error);
-    }
-}
-
-navigator.geolocation.getCurrentPosition( async (position) => {
-    let { latitude: lat, longitude: lon } = position.coords;
-    await getWeather(lat, lon);
-});
-
-
-const today = new Date();
-const year = today.getFullYear();
-const month = (today.getMonth() + 1).toString().padStart(2, '');
-const day = today.getDate().toString().padStart(2, '');
-
-todaysDate.innerHTML = `<p class="year">${year}</p><p class="date">${month}/${day}</p>`
