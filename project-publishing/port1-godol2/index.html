@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ko">
+<head>
+    <title>고돌이 - 고용지원금 돌려받자 이지하게!(TEST)</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="http://gotax2022.cdn1.cafe24.com/og-img.png">
+    <link rel="favicon" href="http://gotax2022.cdn1.cafe24.com/favicon.ico">
+    <link rel="shortcut icon" href="/resources/img/favicon.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="고돌이 - 고용지원금 돌려받자 이지하게!">
+    <meta property="og:description" content="나도 몰라서 못 받은 내돈, 고돌이가 1분만에 찾아드립니다. 직원 1명당 평균 700만원 지금 확인해보세요.">
+    <meta property="og:url" content="http://godol2.com/">
+    <meta property="og:keyword" content="경정청구, 고용지원금환급, 고돌이, 고돌2, 고돌이환급, 700만원환급, 고용지원금찾기, 채용지원금, 고용지원금, 환급금조회, 환급액확인">
+    <meta name="type" content="website">
+    <meta name="title" content="고돌이 - 고용지원금 돌려받자 이지하게!">
+    <meta name="description" content="나도 몰라서 못 받은 내돈, 고돌이가 1분만에 찾아드립니다. 직원 1명당 평균 700만원 지금 확인해보세요.">
+    <meta name="url" content="http://godol2.com/">
+    <meta name="keyword" content="경정청구, 고용지원금환급, 고돌이, 고돌2, 고돌이환급, 700만원환급, 고용지원금찾기, 채용지원금, 고용지원금, 환급금조회, 환급액확인">
+    <meta name="naver-site-verification" content="0092c7d33bb640eb5e71e9bf193f3e023f6128ef" />
+
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./ionicons/css/ionicons.min.css" rel="stylesheet">
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/font-awesome.js" crossorigin="anonymous"></script>
+
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+</head>
+
+
+
+<body>
+    <main id="home">
+
+        <!-- 헤더 -->
+        <header>
+            <div class="header-wrap">
+                <a href="#home">
+                    <div class="main-logo"></div>
+                </a>
+                <span onclick="location.href='https://godol2.net/'">환급금 무료 조회</span>
+            </div>
+        </header>
+
+        <!-- 고정버튼 -->
+        <div class="button-fixed">
+            <button class="button-fixed-refund" onclick="location.href='https://godol2.net/'">무료로 환급금 조회하기</button>
+            <button class="button-fixed-kakaotalk" onclick="location.href='https://pf.kakao.com/_xaWxaaxj/chat'"><img src="./img/kakao.png" alt="상담톡">상담톡</button>
+        </div>
+
+        <!-- 메인화면 -->
+        <section id="container" class="container-01">
+            <div class="content">
+                <span class="main-heading-top">사업자 전용 환급 플랫폼, 고돌이</span>
+                <div class="main-heading-bottom">
+                    <p><span class="pointcolor p1">고</span>용지원금</p>
+                    <p><span class="pointcolor p2">돌</span>려받는 -</p>
+                    <p><span class="pointcolor p3">이</span>지한 방법</p>
+                </div>
+                <div class="main-model-img">
+                    <img src="./img/model.png" alt="브랜드모델사진">
+                    <p>브랜드 모델<br>김현욱</p>
+                </div>
+            </div>
+            <img src="./img/bg-shape.png" alt="배경-도형" class="bg-shape bg-shape1">
+            <img src="./img/bg-shape.png" alt="배경-도형" class="bg-shape bg-shape2">
+            <img src="./img/bg-shape.png" alt="배경-도형" class="bg-shape bg-shape3">
+        </section>
+
+        <!-- 섹션 2 -->
+        <section id="container" class="container-02">
+            <div class="sub-title">
+                <p><span class="sub-title-1">'몰라서 못 받은 내 돈'</span></p>
+                <p><span class="sub-title-2">평균 700만원!</span></p>
+            </div>
+            <div class="sub-description">
+                <p>지난 5년간 직원 채용한 적이 있다면,</p>
+                <input type="checkbox" id="popup">
+                <p>지금 바로 <span class="sub-description-bold">고용지원금<label for="popup" class="question-mark">?</label>조회</span>해보세요.</p>
+                <div>
+                    <label for="popup">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i> <span class="popup-text-bold">고용지원금</span>이란?
+                        </div>
+                        <div>
+                            <p class="popup-text">일자리 창출 및 사업주 지원을 위한 <span>국가지원사업</span>입니다. 지원사업별 기준 조건에 부합할 경우, 별도의 신청을 통해 받을 수 있습니다.</p>
+                            <br>
+                            <p class="popup-text-small">* 신청기한을 놓친 지원금은 최근 5년에 한하여 경정청구를 통해 환급받을 수 있습니다.</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="box-element-wrapper">
+                <div class="box-element">
+                    <div class="box-element-img"><img src="./img/container-02-img-search.png" alt="조회"></div>
+                    <div class="box-element-text">
+                        <p>환급금 조회 기간<p class="box-element-text-bold"><span class="box-element-text-bold-small">최근 </span>5<span class="box-element-text-bold-small">년</span></p></p>
+                    </div>
+                </div>
+                <div class="box-element">
+                    <div class="box-element-img"><img src="./img/container-02-img-building.png" alt="건물"></div>
+                    <div class="box-element-text">
+                        <p>환급 조회 업체 수<p class="box-element-text-bold">28,684<span class="box-element-text-bold-small">개</span></p></p>
+                    </div>
+                </div>
+                <div class="box-element">
+                    <div class="box-element-img"><img src="./img/container-02-img-coin.png" alt="동전"></div>
+                    <div class="box-element-text">
+                        <p>누적 환급 조회액<p class="box-element-text-bold">1,800<span class="box-element-text-bold-small">억</span></p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="container" class="container-review">
+            <div class="sub-title">
+                <p><span class="sub-title-1">스마트한<br><span class="sub-title-2">요즘 사장님들</span>의</span></p>
+                <p><span class="sub-title-1">초간단<br><span class="sub-title-2">내 돈 찾기 이야기</span></span></p>
+            </div>
+            <div class="review-popup">
+                <div class="re-pop re1">
+                    <div class="close-btn"></div>
+                    <p class="review-popup-text">
+                        <span class="title">핸드폰만 있으면 바로 조회됩니다.</span>
+
+                        현장에서 바쁘게 일하다 보니 고용지원금은 생각 못했는데요.<br>
+                        고돌이는 핸드폰만 있으면 바로 조회가 되다보니 좋았습니다.<br>
+                        그냥 조회하고 신청만 해도 환급금이 입금되는데 진즉 신경썼으면<br>
+                        6년 전 7년 전 금액까지 받을 수 있었을텐데 아쉽네요. ㅎㅎ<br><br>
+                    </p>
+                    <p class="review-popup-text-bottom">
+                        <span class="client">강*진님 / 건설업</span><span class="highlight-0053FB">37,426,965원 환급</span>
+                    </p>
+                    <img src="./img/review-img-01.jpg" alt="">
+                </div>
+                <div class="re-pop re2">
+                    <div class="close-btn"></div>
+                    <p class="review-popup-text">
+                        <span class="title">몰라서 놓친 환급액이 이렇게 많을 줄은 몰랐어요.</span>
+
+                        이런 지원금이 있는거면 홍보 좀 자주 해주지ㅠㅠ<br>
+                        몰라서 그간 다 놓친거 같아요..ㅠ<br>
+                        예상 환급액 확인하자마자 느낀 게<br>
+                        내가 여태 몰라서 놓쳤던 환급액이 이렇게나 많다고? 였어요!<br>
+                        지금이라도 고돌이 알게돼서 너무 다행인거 있죠?ㅠ<br>
+                        아직 조회 안해보셨으면 꼭 해보세요!!!<br><br>
+                    </p>
+                    <p class="review-popup-text-bottom">
+                        <span class="client">이*빈님 / 교육서비스업</span><span class="highlight-0053FB">21,453,712원 환급예정</span>
+                    </p>
+                    <img src="./img/review-img-02.jpg" alt="">
+                </div>
+                <div class="re-pop re3">
+                    <div class="close-btn"></div>
+                    <p class="review-popup-text">
+                        <span class="title">정말 환급이 됩니다!</span>
+
+                        불경기로 힘들었을 때 우연히 좋은 기회로 고돌이를 알게돼서 다행이었어요.<br>
+                        속는 셈 치고 조회해봤는데 환금액이 생각보다 많아서 사기인가 했는데 수수료가 환급 후 결제라 신청해봤거든요.<br>
+                        그런데 정말 환급이 되더라구요.<br>
+                        고민은 환급 일자만 늦출 뿐.. 저처럼 고민하다가 5년전꺼 놓치지 마시고<br>
+                        환급 받을 수 있을 때 빨리 받으세요!<br><br>
+
+                    </p>
+
+                    <p class="review-popup-text-bottom">
+                        <span class="client">구*상님 / 서비스업</span><span class="highlight-0053FB">11,126,354원 환급</span>
+                    </p>
+                    <img src="./img/review-img-03.jpg" alt="">
+                </div>
+                <div class="re-pop re4">
+                    <div class="close-btn"></div>
+                    <p class="review-popup-text">
+                        <span class="title">바쁠 때 신경 안써도 알아서 환급해줘요!</span>
+
+                        요즘 정말 정신없는 하루를 보내고 있는데요.<br>
+                        주변 분들한테 세금환급에 대해 종종 들었지만 어렵기도 하고<br>
+                        바쁘기도 해서 계속 미뤄왔는데 고돌이는 1분이면 예상환급금이 나오고<br>
+                        환급 신청도 인감증명 필요 없이 어렵지 않아요.<br>
+                        바쁘시더라도 한번쯤 조회해보세요.<br>
+                        정말 강추 합니다!<br><br>
+                    </p>
+                    <p class="review-popup-text-bottom">
+                        <span class="client">강*진님 / 물류업</span><span class="highlight-0053FB">38,426,965원 환급</span>
+                    </p>
+                    <img src="./img/review-img-04.jpg" alt="">
+                </div>
+                <div class="re-pop re5">
+                    <div class="close-btn"></div>
+                    <p class="review-popup-text">
+                        <span class="title">고돌이 덕분에 한시름 돌렸어요!☺</span>
+
+                        6년간 운영했던 가게를 정리했는데<br>
+                        폐업을 해도 돈 나갈 곳이 왜 이리 많은지..ㅠ<br>
+                        고돌이 덕분에 고용지원금이라는게 있다는 걸 알게 됐어요!<br>
+                        고용지원금은 폐업자도 받을 수 있으니까 예상환급금 꼭 확인해보세요!<br>
+                        덕분에 한시름 돌렸어요!☺<br><br>
+                    </p>
+
+                    <p class="review-popup-text-bottom">
+                        <span class="client">동*아님 / 요식업</span><span class="highlight-0053FB">12,351,478원 환급</span>
+                    </p>
+                    <img src="./img/review-img-05.jpg" alt="">
+                </div>
+                <div class="re-pop re6">
+                    <div class="close-btn"></div>
+                    <p class="review-popup-text">
+                        <span class="title">믿을 수 있는 고돌이, 깔끔해서 만족합니다.</span>
+
+                        처음에는 피싱이 아닐까 걱정했는데 벌써 많은 사업자분들이 환급을 받았더라고요. 사업을 하고 계신다면 환급금이 있는지 확인해보면 좋을 것 같습니다. 저도 반신반의하며 조회해보고 생각보다 큰 금액에 놀랐어요.
+                        또 신기한 게 이렇게 조회된 금액을 그대로 돌려받을 수 있다는 거!<br>
+                        어려운 시기에 한숨 돌렸네요.<br>
+                        감사합니다!<br><br>
+                    </p>
+
+                    <p class="review-popup-text-bottom">
+                        <span class="client">㈜진한** / 생산·제조업</span><span class="highlight-0053FB">29,854,400원 환급</span>
+                    </p>
+                    <img src="./img/review-img-06.jpg" alt="">
+                </div>
+                <div class="re-pop re7">
+                    <div class="close-btn"></div>
+                    <p class="review-popup-text">
+                        <span class="title">정확한 예상 환급금, 매년 신청할 예정입니다.</span>
+
+                        예상 환급금이 정확하지 않을 수도 있겠다 싶었는데<br>
+                        고돌이의 예상 환급금은 정확해서 좋더군요.<br>
+                        환급 신청하는 것도 간편 인증으로 어렵지 않았고,<br>
+                        전문 회계사가 직접 경정청구를 진행해주니까 믿고 맡겼습니다.<br>
+                        더 받으면 더 받았지 예상 환급금보다 못 받는 경우는 없는 것 같던데<br>
+                        매년 신청해서 받아야겠습니다.<br><br>
+                    </p>
+
+                    <p class="review-popup-text-bottom">
+                        <span class="client">플레*** / 방송통신업</span><span class="highlight-0053FB">8,545,380원 환급예정</span>
+                    </p>
+                    <img src="./img/review-img-07.jpg" alt="">
+                </div>
+                <div class="re-pop re8">
+                    <div class="close-btn"></div>
+                    <p class="review-popup-text">
+                        <span class="title">생각치도 못한 꽁돈! 꼭 확인해보세요!</span>
+
+                        지원금이 있을거라는 건 생각도 못해봤는데<br>
+                        주변 사장님들과 재미삼아 확인했더니 웬일루 지원금이 ㅋㅋㅋ<br>
+                        생각치도 못한 꽁돈이라 너무 좋더라구요 ㅋㅋ<br>
+                        고마워요 고돌이:)<br><br>
+                    </p>
+
+                    <p class="review-popup-text-bottom">
+                        <span class="client">장*수님 / 체육시설업</span><span class="highlight-0053FB">4,852,623원 환급</span>
+                    </p>
+                    <img src="./img/review-img-08.jpg" alt="">
+                </div>
+            </div>
+            <div class="review-container">
+                <div class="review-wrap">
+                    <ul class="review-roll">
+                        <li class="review re1">
+                            현장에서 바빠도<br>
+                            1분이면 조회가 되니까
+                        </li>
+                        <li class="review re2">
+                            몰라서 놓쳤던 환급액이<br>
+                            이렇게 많을 줄이야···
+                        </li>
+                        <li class="review re3">
+                            처음엔 의심했는데<br>
+                            정말 환급이 되더라구요
+                        </li>
+                        <li class="review re4">
+                            바쁜데 신경 안써도<br>
+                            알아서 환급해주니까
+                        </li>
+                        <li class="review re5">
+                            폐업자도 환급 가능!<br>
+                            덕분에 한시름 돌렸어요
+                        </li>
+                        <li class="review re6">
+                            믿을 수 있는 고돌이<br>
+                            깔끔해서 만족합니다
+                        </li>
+                        <li class="review re7">
+                            정확한 예상 환급금,<br>
+                            매년 신청할 예정입니다.
+                        </li>
+                        <li class="review re8">
+                            생각 치도 못한 꽁돈!<br>
+                            꼭 확인해보세요!
+                        </li>
+                    </ul>
+                    <ul class="review-roll">
+                        <li class="review re1">
+                            현장에서 바빠도<br>
+                            1분이면 조회가 되니까
+                        </li>
+                        <li class="review re2">
+                            몰라서 놓쳤던 환급액이<br>
+                            이렇게 많을 줄이야···
+                        </li>
+                        <li class="review re3">
+                            처음엔 의심했는데<br>
+                            정말 환급이 되더라구요
+                        </li>
+                        <li class="review re4">
+                            바쁜데 신경 안써도<br>
+                            알아서 환급해주니까
+                        </li>
+                        <li class="review re5">
+                            폐업자도 환급 가능!<br>
+                            덕분에 한시름 돌렸어요
+                        </li>
+                        <li class="review re6">
+                            믿을 수 있는 고돌이<br>
+                            깔끔해서 만족합니다
+                        </li>
+                        <li class="review re7">
+                            정확한 예상 환급금,<br>
+                            매년 신청할 예정입니다.
+                        </li>
+                        <li class="review re8">
+                            생각 치도 못한 꽁돈!<br>
+                            꼭 확인해보세요!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="container" class="container-03">
+            <div class="sub-title bnh-fadeIn">
+                <p><span class="sub-title-1">'세무조사, 추징'</span></p>
+                <p><span class="sub-title-2">걱정할 필요 없게</span></p>
+            </div>
+            <div class="sub-description bnh-fadeIn">
+                <p>고돌이 환급은<br><span class="sub-description-bold">BnH회계법인</span>이 함께합니다.</p>
+            </div>
+
+            <!-- 비디오 모달 -->
+            <div class="bnh-video-modal">
+                <div class="bnh-video-wrap">
+                    <iframe id="videoIframe" width="100%" height="100%" src="https://www.youtube.com/embed/ESs2E8QWV-Q?si=Kr3AJDJD09G_zjuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <span class="bnh-video-modal-close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+            </div>
+            <div class="bnh-fadeIn">
+                <div class="bnh-video">
+                    <div class="bnh-video-img">
+                        <img src="./img/bnh-video.png" alt="BnH회계법인 비디오 썸네일">
+                        <div class="bnh-video-playBtn"><i class="ion-play"></i></div>
+                    </div>
+
+                    <div class="bnh-img-2">
+                        <p>“대기업 전담 회계사의 안전한 환급 서비스”</p>
+
+                        <p>고돌이 환급은 S사, H사, L사 등<br>
+                            <span>대기업 세무조사 경력</span>이 있는 전문인력들의<br>
+                            면밀한 검토 과정을거쳐 진행됩니다.<br><br>
+
+                            대기업에서도 신용하는 BnH의 경정청구 서비스<br>
+                            지금 고돌이로 경험하세요.
+                        </p>
+                        <!-- <div class="primary-customer">
+                            <p>주요 고객사</p>
+                            <div class="primary-customer-img">
+                                <img src="./img/primary-customer-samsung.png" alt="삼성">
+                                <img src="./img/primary-customer-lg.png" alt="엘지">
+                                <img src="./img/primary-customer-hyundai.png" alt="현대">
+                                <img src="./img/primary-customer-wooribank.png" alt="우리은행" class="img-hidden">
+                                <img src="./img/primary-customer-shinhanbank.png" alt="신한은행" class="img-hidden">
+                            </div>
+                        </div>
+                        <img src="./img/bnh-bg-2-shape.png" class="primary-customer-shape" alt=""> -->
+                    </div>
+
+                    <div class="bnh-img-3">
+                        <p>“대규모 전문 인력의 정확한 환급 서비스”</p>
+
+                        <p>고돌이 환급을 진행하는 BnH회계법인은<br>
+                            <span>국세청, 변호사, 세무사, 회계사 출신 전문인력</span>을<br>
+                            약 200명 보유하고 있습니다.<br><br>
+
+                            처음부터 정확한 금액을 안내드릴 수 있는 건<br>
+                            대규모 전문 인력을 보유한 BnH만의 장점입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="bnh-btn-wrap">
+                    <div class="bnh-btn-1">
+                        <span>전문회계법인</span>
+                    </div>
+
+                    <div class="bnh-btn-2">
+                        <span>대기업 전담</span>
+                    </div>
+
+                    <div class="bnh-btn-3">
+                        <span>전문인력 다수</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="container" class="container-04">
+            <div class="refund-info-wrapper">
+                <div class="info-element info-fadeIn">
+                    <p>복잡한 서류 없이<br>카카오톡으로<br><span class="highlight-lemon">1분만에 확인해보세요</span></p>
+                    <img src="./img/refund-info-img-phone.png" class="refund-info-img-phone" alt="휴대폰이미지">
+                </div>
+                <div class="info-element info-fadeIn">
+                    <p>1원도 놓치지 않도록<br><span class="highlight-blue">5년 동안의 환급금</span><br>한 번에 조회</p>
+                    <img src="./img/refund-info-img-5y.png" class="refund-info-img" alt="">
+                </div>
+                <div class="info-element info-fadeIn">
+                    <p>SSL 인증<br>데이터 암호화로<br><span class="highlight-blue">철저한 개인정보 보호</span></p>
+                    <img src="./img/refund-info-img-security.png" class="refund-info-img" alt="">
+                </div>
+                <div class="info-element info-fadeIn">
+                    <p><span class="highlight-blue">세무대리인 변경 없는</span><br>안전한 환급</p>
+                    <img src="./img/refund-info-img-doc.png" class="refund-info-img" alt="">
+                </div>
+                <div class="info-element info-fadeIn">
+                    <p><span class="highlight-lemon">선입금/추가결제 없이</span><br>환급 확인 후<br>이용료 결제 진행</p>
+                    <img src="./img/refund-info-img-pay.png" class="refund-info-img-pay" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="qna" class="container-qna">
+            <div class="sub-title">
+                <p><span class="sub-title-2">궁금해요 고돌이!</span></p>
+            </div>
+            <div class="qna-list">
+                <div class="qna-wrap">
+                    <div class="qna-list-q">
+                        <span>고돌이는 무슨 서비스인가요?</span>
+                        <i class="fa-solid fa-angle-down qna-icon"></i>
+                    </div>
+                    <div class="qna-list-a">
+                        <p>
+                            고돌이는 개인/법인 사업자를 위한 <span class="qna-list-a-bold">고용지원금 환급 신고 도움 서비스</span>입니다.<br>
+                            고용지원금은 사업자를 위한 지원 혜택으로 고돌이에서는 5년간 받지 못한 고용지원금을 돌려받을 수 있도록 환급 프로그램과 제휴 회계법인의 크로스 체크를 통해 <span class="qna-list-a-bold">1원도 남김 없이 정확한 환급</span>을 도와드리고 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="qna-wrap">
+                    <div class="qna-list-q">
+                        <span>환급은 어떻게 진행되나요?</span>
+                        <i class="fa-solid fa-angle-down qna-icon"></i>
+                    </div>
+                    <div class="qna-list-a">
+                        <p>환급절차는 다음과 같습니다.<br><br>
+
+                        1. 카카오 인증을 통한 환급액 조회<br>
+                        2. 환급 신청<br>
+                        3. 제휴 회계사의 검토 및 신고서 접수<br>
+                        4. 관할 세무서의 환급금 입금<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;*환급금 입금에는 평균 1개월~최대 3개월이 소요됩니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="qna-wrap">
+                    <div class="qna-list-q">
+                        <span>환급금을 받으면 세무 조사의 대상이 되는 게 아닌가요?</span>
+                        <i class="fa-solid fa-angle-down qna-icon"></i>
+                    </div>
+                    <div class="qna-list-a">
+                        <p>
+                            <span class="qna-list-a-bold">아닙니다.</span><br>
+                            경정청구는 납세자의 정당한 권리로 세무 조사 대상과는 무관합니다.<br>
+                            세무조사 대상자 선정은 국세기본법 제81조 6에 규정된 사유에 따라 선정하며, 경정청구는 세무조사 대상자 선정 기준으로 규정되어 있지 않습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="qna-wrap">
+                    <div class="qna-list-q">
+                        <span>이용 요금이 있나요?</span>
+                        <i class="fa-solid fa-angle-down qna-icon"></i>
+                    </div>
+                    <div class="qna-list-a">
+                        <p>
+                            고돌이의 환급금 조회 서비스는 무료로 운영되고 있습니다.<br>
+                            단, 조회 후 환급을 신청하여 환급을 받은 후에는 소정의 이용료가 발생합니다.<br>
+                            *서비스 이용료는 입금 희망 계좌에 환급금이 입금된 이후 별도 결제됩니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="qna-wrap">
+                    <div class="qna-list-q">
+                        <span>환급을 신청하면 세무사가 바뀌지는 않나요?</span>
+                        <i class="fa-solid fa-angle-down qna-icon"></i>
+                    </div>
+                    <div class="qna-list-a">
+                        <p>
+                            <span class="qna-list-a-bold">아닙니다.</span><br>
+                            고돌이 제휴 회계사는 관할세무서에 경정청구를 진행하는 업무만 담당하며 담당 세무사 및 홈택스 세무대리인은 변경되지 않으니 걱정하지 않으셔도 됩니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="qna-wrap">
+                    <div class="qna-list-q">
+                        <span>환급 신청을 안하면 어떻게 되나요?</span>
+                        <i class="fa-solid fa-angle-down qna-icon"></i>
+                    </div>
+                    <div class="qna-list-a">
+                        <p>
+                            조회된 예상 환급금은 5년간의 고용지원금 환급 금액입니다.<br>
+                            단, <span class="qna-list-a-bold">일정 기간이 지난 환급금은 소멸</span>되니 서둘러 신청하시길 바랍니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-info">
+                <img src="./img/logo-gotax.png" alt="로고이미지">
+                <div class="footer-text">
+                    <p><a href="https://godol2.com/privacy" target="_blank">개인정보 취급방침</a> ㅣ <a href="https://godol2.com/service" target="_blank">서비스 이용 약관</a></p>
+                    <p class="footer-info-small">(주)고택스 ㅣ 세무,회계Cloud Service ㅣ <span></span>대표자 임홍순 ㅣ 사업자등록번호 334-86-01740</p>
+                    <p class="footer-info-small">BnH보현회계법인 ㅣ 회계및세무관련서비스 ㅣ <span></span>대표자 이경로 ㅣ 사업자등록번호 329-86-01151</p>
+                    <p class="footer-info-small">Copyright © Gotex All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+
+        // review hover시 롤링 애니 멈춤
+        let review = Array.from(document.querySelectorAll(".review-roll li"));
+        let reviewRoll = Array.from(document.querySelectorAll(".review-roll"));
+
+        review.forEach((i) => {
+            i.addEventListener("mouseover", () => {
+                reviewRoll.forEach((e) => {
+                    e.classList.add("ani-paused");
+                });
+            });
+            i.addEventListener("mouseout", () => {
+                reviewRoll.forEach((e) => {
+                    e.classList.remove("ani-paused");
+                });
+            });
+        });
+
+        // review 팝업 부분
+        // let review = Array.from(document.querySelectorAll(".review-roll li"));
+        let rePopBg = document.querySelector(".review-popup");
+        let rePop = Array.from(document.querySelectorAll(".re-pop"));
+
+        review.forEach((reviewElement) => {
+            reviewElement.addEventListener("click", () => {
+                event.stopPropagation(); // 이벤트 버블링 중지
+
+
+                const reviewClassList = reviewElement.classList; // review 요소의 클래스 목록 가져오기
+                rePop.forEach((rePopElement) => {
+                    const rePopClassList = rePopElement.classList; // rePop 요소의 클래스 목록 가져오기
+                    // review와 rePop 클래스 목록이 일치하는 경우에만 이벤트를 작동시킴
+                    if (Array.from(reviewClassList).some(className => rePopClassList.contains(className))) {
+                        rePopElement.classList.toggle("reviewToggle");
+                        rePopBg.classList.toggle("reviewBgToggle");
+                    };
+                });
+            });
+        });
+        document.addEventListener("click", (event) => {
+            // 클릭된 요소의 클래스 목록 가져오기
+            const clickedElement = event.target;
+            const clickedClassList = clickedElement.classList;
+
+            // 모든 rePop 요소를 순회하면서 reviewToggle 클래스를 가진 요소의 클래스 제거
+            rePop.forEach((rePopElement) => {
+				rePopElement.classList.remove("reviewToggle");
+				rePopBg.classList.remove("reviewBgToggle");
+            });
+        });
+
+        //GSAP
+        const box = document.querySelectorAll(".box-element");
+
+        box.forEach(function(fadeIn, i) {
+            gsap.to(fadeIn, 1,{ //fadeIn애니를 준다, 1초동안
+                delay:(i + 1) * .3,
+                opacity: 1,
+                y: 0,
+                scrollTrigger: {
+                    trigger: box, //스크롤트리거 시작점
+                    start: "top 75%",
+                    end: "bottom 50%",
+                    markers: false,
+                }
+            });
+        });
+
+        //bnh섹션 애니
+        const bnhElements = document.querySelectorAll(".container-03 .bnh-fadeIn");
+
+        bnhElements.forEach(function(fadeIn1, i){
+            gsap.from(fadeIn1, .5,{
+                delay: i * .3,
+                opacity: 0,
+                y: -30,
+                scrollTrigger: {
+                    trigger: bnhElements,
+                    start: "top 40%",
+                    end: "bottom bottom",
+                    markers: false,
+                }
+            });
+        });
+
+        //BnH 모달팝업 영상
+        // let iframe = document.querySelector(".bnh-video-modal iframe");
+
+        // window.addEventListener('resize', () => {
+        //     let responsiveWidth = window.innerHeight / 0.5625;
+        //     // responsiveHeight = iframe.offsetWidth * 0.5625;
+        //     iframe.setAttribute('width', responsiveWidth);
+        //     iframe.setAttribute('height', window.innerHeight);
+        //     console.log(responsiveWidth, window.innerHeight);
+        //     // console.log(window.innerHeight);
+        // })
+        // function resizeVideo() {
+        //     const videoContainer = document.querySelector(".bnh-video-wrap");
+        //     const aspectRatio = 16 / 9; // 원하는 가로세로 비율 (16:9)
+        //     const newHeight = window.innerHeight;
+        //     const newWidth = newHeight * aspectRatio;
+        //     const videoIframe = document.getElementById("bnhvideo-iframe");
+
+        //     videoIframe.style.width = newWidth + "px";
+        //     videoIframe.style.height = newHeight + "px";
+        // }
+
+        // // 페이지 로딩 후 실행하거나 브라우저 창 크기 조정 이벤트에서 호출
+        // window.addEventListener("resize", resizeVideo);
+        // resizeVideo();
+
+        // const videoWrap = document.querySelector(".bnh-video-wrap");
+        // const aspectRatio = 16 / 9;
+        // console.log(videoWrap.clientHeight);
+        // let newHeight = window.innerHeight;
+        // let newWidth = newHeight * aspectRatio;
+
+        // window.addEventListener("resize", () => {
+        //     videoWrap.style.height = newHeight + "px";
+        //     videoWrap.style.width = newWidth + "px";
+        // });
+
+
+
+
+        //BnH회계법인 버튼 클릭시 세부내용
+        const bnhBtn1 = document.querySelector(".bnh-btn-1");
+        const bnhBtn2 = document.querySelector(".bnh-btn-2");
+        const bnhBtn3 = document.querySelector(".bnh-btn-3");
+        const bnhImg2 = document.querySelector(".bnh-img-2");
+        const bnhImg3 = document.querySelector(".bnh-img-3");
+        const bnhVideoImg = Array.from(document.querySelectorAll(".bnh-video-img,.bnh-video-playBtn"));
+
+        function removeBtnClass(btn) { btn.classList.remove("BtnActive"); }
+        function removeImgClass(img) { img.classList.remove("bnhImgActive"); }
+        function bnhVideoImgOpacity(opacity) {
+            bnhVideoImg[0].style.opacity = opacity;
+            bnhVideoImg[1].style.opacity = opacity;
+        }
+        bnhBtn1.classList.add("BtnActive");
+
+        bnhBtn1.addEventListener("click", () => {
+            bnhVideoImgOpacity("1");
+            bnhBtn1.classList.add("BtnActive");
+            removeImgClass(bnhImg2);
+            removeImgClass(bnhImg3);
+            removeBtnClass(bnhBtn2);
+            removeBtnClass(bnhBtn3);
+        });
+        bnhBtn2.addEventListener("click", () => {
+            bnhVideoImgOpacity("0");
+            bnhBtn2.classList.add("BtnActive");
+            bnhImg2.classList.add("bnhImgActive");
+            removeImgClass(bnhImg3);
+            removeBtnClass(bnhBtn1);
+            removeBtnClass(bnhBtn3);
+        });
+        bnhBtn3.addEventListener("click", () => {
+            bnhVideoImgOpacity("0");
+            bnhBtn3.classList.add("BtnActive");
+            bnhImg3.classList.add("bnhImgActive");
+            removeImgClass(bnhImg2);
+            removeBtnClass(bnhBtn1);
+            removeBtnClass(bnhBtn2);
+        });
+
+        //BnH회계법인 img 클릭하면 비디오모달창 연결
+        let bnhImg = document.querySelector(".bnh-video-img");
+        let bnhVideoModal = document.querySelector(".bnh-video-modal");
+        let bnhVideoCloseBtn = document.querySelector(".bnh-video-modal-close-btn");
+
+        bnhImg.addEventListener("click", () => {
+            bnhVideoModal.classList.add("bnh-video-modal-active");
+        });
+
+        // X버튼 클릭하면 모달창 닫기
+        bnhVideoCloseBtn.addEventListener("click", () => {
+            bnhVideoModal.classList.remove("bnh-video-modal-active");
+        });
+
+        // Esc 키 누르면 모달창 닫기
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Escape') {
+                bnhVideoModal.classList.remove("bnh-video-modal-active");
+            }
+        });
+
+
+        //인포박스 섹션
+        const infoBox = document.querySelectorAll(".info-fadeIn");
+
+        infoBox.forEach(function(fadeIn2, i) {
+            gsap.from(fadeIn2, .7,{
+                delay:(i + 1) * .3,
+                opacity: 0,
+                y: -30,
+                scrollTrigger: {
+                    trigger: infoBox,
+                    start: "top 60%",
+                    end: "bottom 50%",
+                    markers: false,
+                }
+            });
+        });
+
+
+        // QnA 버튼 토글
+        const qnaArea = document.querySelectorAll(".qna-wrap");
+        const qnaAnswer = document.querySelectorAll(".qna-list-a");
+        const qnaIcon = document.querySelectorAll(".qna-icon");
+
+        for(let i=0; i<qnaArea.length; i++) {
+            qnaArea[i].addEventListener("click", () => {
+                qnaAnswer[i].classList.toggle("active");
+                qnaIcon[i].classList.toggle("qna-icon-flip");
+        });
+        }
+
+
+        // 로고(a태그) 클릭시 스크롤 탑으로 올려주는 애니
+        $('a').click(function(){
+        $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 600);
+        return false;
+        });
+    </script>
+
+
+</body>
+</html>
