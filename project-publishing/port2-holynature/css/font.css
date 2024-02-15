@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: 'AppleB';
+    src: url(../font/AppleSDGothicNeoB.ttf);
+}
+@font-face {
+    font-family: 'AppleEB';
+    src: url(../font/AppleSDGothicNeoEB.ttf);
+}
+@font-face {
+    font-family: 'AppleH';
+    src: url(../font/AppleSDGothicNeoH.ttf);
+}
+@font-face {
+    font-family: 'AppleL';
+    src: url(../font/AppleSDGothicNeoL.ttf);
+}
+@font-face {
+    font-family: 'AppleM';
+    src: url(../font/AppleSDGothicNeoM.ttf);
+}
+@font-face {
+    font-family: 'AppleR';
+    src: url(../font/AppleSDGothicNeoR.ttf);
+}
+@font-face {
+    font-family: 'AppleSB';
+    src: url(../font/AppleSDGothicNeoSB.ttf);
+}
+@font-face {
+    font-family: 'AppleT';
+    src: url(../font/AppleSDGothicNeoT.ttf);
+}
+@font-face {
+    font-family: 'AppleUL';
+    src: url(../font/AppleSDGothicNeoUL.ttf);
+}
+
+
+/* Manrope */
+
+@font-face {
+    font-family: 'ManropeB';
+    src: url(../font/Manrope-Bold.ttf);
+}
+@font-face {
+    font-family: 'ManropeEB';
+    src: url(../font/Manrope-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'ManropeEL';
+    src: url(../font/Manrope-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'ManropeL';
+    src: url(../font/Manrope-Light.ttf);
+}
+@font-face {
+    font-family: 'ManropeM';
+    src: url(../font/Manrope-Medium.ttf);
+}
+@font-face {
+    font-family: 'ManropeR';
+    src: url(../font/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: 'ManropeSB';
+    src: url(../font/Manrope-SemiBold.ttf);
+}
+
+
+/* SUITE */
+
+@font-face {
+    font-family: 'SuiteB';
+    src: url(../font/SUITE-Bold.ttf);
+}
+@font-face {
+    font-family: 'SuiteEB';
+    src: url(../font/SUITE-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'SuiteH';
+    src: url(../font/SUITE-Heavy.ttf);
+}
+@font-face {
+    font-family: 'SuiteL';
+    src: url(../font/SUITE-Light.ttf);
+}
+@font-face {
+    font-family: 'SuiteM';
+    src: url(../font/SUITE-Medium.ttf);
+}
+@font-face {
+    font-family: 'SuiteR';
+    src: url(../font/SUITE-Regular.ttf);
+}
+@font-face {
+    font-family: 'SuiteSB';
+    src: url(../font/SUITE-SemiBold.ttf);
+}
+
+
+
+
+@font-face {
+    font-family: 'ylee';
+    src: url(../font/ylee-Mortal-Heart.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'iceJaram-Rg';
+    src: url(../font/iceJaram-Rg.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'shining-star';
+    src: url(../font/Cafe24Shiningstar-v2.0.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumBrush';
+    src: url(../font/NanumBrush.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
