@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="js/font-awesome.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="content-wrap">
+        <section id="header">
+            <div class="title">
+                <span>To Do List</span>
+                <span>
+                    <span class="title-weather"></span>
+                    <span class="title-date"></span>
+                </span>
+            </div>
+            <div class="input-wrap">
+                <input id="todo-input" type="text" placeholder="할 일을 입력해주세요"><span class="add">+</span>
+            </div>
+        </section>
+        <section id="board">
+            <div class="taps">
+                <span id="underline"></span>
+                <span id="all" class="tap">전체</span>
+                <span id="ongoing" class="tap">진행중</span>
+                <span id="done" class="tap">완료</span>
+            </div>
+            <div class="task-board">
+                <img src="img/pen-icon.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

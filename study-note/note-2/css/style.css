@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/PretendardVariable.woff2') format('woff2-variations');
+}
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Pretendard'; }
+body { display: flex; justify-content: center; align-items: center; width: 100vw; height: 100vh; color: #3d5061; background-color: rgb(240, 240, 240); }
+#content-wrap { width: 90%; max-width: 480px; height: 500px; background-color: #fff; padding: 30px 50px 50px 50px; box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; }
+#content-wrap > #header { width: 100%; margin-bottom: 14px; }
+#content-wrap > #header > .title { display: flex; align-items: center; justify-content: space-between; width: 100%; height: 80px; }
+#content-wrap > #header > .title > span:nth-child(1) { font-size: 36px; font-weight: 600; letter-spacing: -2px; }
+#content-wrap > #header > .title > span:nth-child(2) { display: flex; align-items: center; gap: 10px; font-size: 16px; text-align: right; }
+#content-wrap > #header > .title > span:nth-child(2) > .title-date > .year { font-size: 14px; }
+#content-wrap > #header > .title > span:nth-child(2) > .title-date > .date { font-size: 26px; }
+#content-wrap > #header > .title > span:nth-child(2) > .title-weather > img { width: 40px; }
+#content-wrap > #header > .input-wrap { display: flex; align-items: center; gap: 4px; width: 100%; height: 40px; }
+#content-wrap > #header > .input-wrap > #todo-input { width: calc(100% - 34px); height: 100%; padding: 6px; font-size: 16px; border: none; border-bottom: 1px solid #161616; }
+#content-wrap > #header > .input-wrap > #todo-input:focus { outline: none; background-color: rgb(255, 250, 199); }
+#content-wrap > #header > .input-wrap > #todo-input:focus::placeholder { color: transparent; }
+#content-wrap > #header > .input-wrap > .add { display: flex; justify-content: center; align-items: center; width: 34px; height: 34px; border-radius: 50%; background-color: #e7e7e7; font-size: 24px; cursor: pointer; transition: all 0.3s; }
+#content-wrap > #header > .input-wrap > .add:hover { background-color: #fff2ba; }
+#content-wrap > #board { width: 100%; background-color: #fff; }
+#content-wrap > #board > .taps { position: relative; border-bottom: 1px solid #eee; }
+#content-wrap > #board > .taps > #all,
+#content-wrap > #board > .taps > #ongoing,
+#content-wrap > #board > .taps > #done { display: inline-block; font-size: 16px; padding: 10px 14px; background-color: #C1E6DF; cursor: pointer; margin-right: 4px; }
+#content-wrap > #board > .taps > #all { background-color: #97D5C9; }
+#content-wrap > #board > .taps > #underline { position: absolute; display: inline-block; width: 55.66px; left: 0; bottom: 0; height: 4px; background-color: #5b9b8e; transition: all 0.3s ease-out; }
+#content-wrap > #board > .task-board { display: grid; justify-content: center; align-items: center; height: 260px; overflow-y: auto; }
+#content-wrap > #board > .task-board::-webkit-scrollbar {
+    width: 6px;  /* 스크롤바의 너비 */
+    margin-left: 4px;
+}
+#content-wrap > #board > .task-board::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #8d8d8d; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+#content-wrap > #board > .task-board::-webkit-scrollbar-track {
+    background: #d6d6d6;  /*스크롤바 뒷 배경 색상*/
+}
+#content-wrap > #board > .task-board > img { width: 60px; padding: 40px 0; opacity: 0.6; }
+#content-wrap > #board > .task-board > .task { display: flex; justify-content: space-between; align-items: center; width: 100%; height: 46px; border-bottom: 1px solid #eee; padding: 0 4px; }
+#content-wrap > #board > .task-board > .task > .done { text-decoration: line-through; }
+#content-wrap > #board > .task-board > .task > .edit > span { display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; cursor: pointer; }
+#content-wrap > #board > .task-board > .task > .edit > .check { background-color: #fff2ba; }
+#content-wrap > #board > .task-board > .task > .edit > .delete { background-color: #f1cbcb; }
+#content-wrap > #board > .task-board > .task > .edit > span > i { font-size: 14px; }
+@media screen and (max-width: 480px) {
+    body { height: initial; padding-top: 40px; }
+    #content-wrap { padding: 20px; }
+    #content-wrap > #header > .input-wrap > #todo-input { font-size: 14px; }
+    #content-wrap > #board > .task-board > .task > p { font-size: 14px; }
+    #content-wrap > #board > .task-board > .task > .edit > span { width: 30px; height: 30px; }
+    #content-wrap > #board > .task-board > .task > .edit > span > i { font-size: 12px; }
+    #content-wrap > #board > .taps > #all,
+    #content-wrap > #board > .taps > #ongoing,
+    #content-wrap > #board > .taps > #done { font-size: 14px; margin-right: 0px; }
+    #content-wrap > #board > .taps > #underline { width: 52.2px; }
+}

@@ -1,0 +1,209 @@
+*{ margin:0; padding:0; box-sizing: border-box; }
+body{ font-family: "Times New Roman", Times, serif; overflow-x: hidden; }
+li { list-style-type: none;}
+a { text-decoration: none; color: #000; }
+
+header {
+    width: 100vw;
+    height: 100px;
+}
+header > .mo { display: none; }
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
+header > nav > .main-logo { cursor: pointer; }
+header > nav > .main-logo > img { width: 100%; }
+header > nav > .todays-date,
+header > nav > .search {
+    width: 220px;
+    font-size: 14px;
+}
+header > nav > .search > input {
+    padding-left: 4px;
+    height: 27px;
+    border: 1px solid #cccccc;
+}
+header > nav > .search > input:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+header > nav > .search > #search-btn {
+    padding: 4px 6px;
+    cursor: pointer;
+}
+#contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#contents > .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    width: 94%;
+    max-width: 1200px;
+    height: 50px;
+    border-bottom: 1px double #000;
+}
+#contents > .category > span {
+    font-size: 14px;
+    cursor: pointer;
+}
+#contents > .news-container {
+    width: 94%;
+    max-width: 1200px;
+}
+#contents > .news-container > .news > .link {
+    display: grid;
+    grid: 
+        "img text"
+        / 360px calc(100% - 380px);
+    gap: 20px;
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid #000;
+    padding: 20px 0;
+    overflow: hidden;
+}
+#contents > .news-container > .news > .link > .img { grid-area: img; }
+#contents > .news-container > .news > .link > .img > img { width: 100%; height: 100%; object-fit: cover; }
+#contents > .news-container > .news > .link > .text { grid-area: text; }
+#contents > .news-container > .news > .link > .text > .title { 
+    font-size: 26px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+#contents > .news-container > .news > .link > .text > .content { 
+    font-size: 16px;
+    color: #5a5a5a;
+    padding: 20px 0; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+#contents > .news-container > .news > .link > .text > .info { font-size: 14px; color: #727272; }
+#contents > .news-container > .error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: #FBDBD9;
+    font-size: 18px;
+    color: #A37173;
+    margin: 20px 0;
+}
+
+#contents > .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 30px 0 100px 0;
+}
+#contents > .pagination > ul { display: flex; gap: 14px; }
+#contents > .pagination > ul > li { padding: 10px 16px; background-color: #eee; cursor: pointer; }
+#contents > .pagination > ul > .active { background-color: #000; color: #fff; }
+
+@media screen and (max-width: 980px) {
+    header > nav {
+        display: grid;
+        grid: "logo logo" 2fr
+              "date search" 1fr
+              /1fr 1fr;
+    }
+    header > nav > .todays-date { grid-area: date; justify-self: baseline; width: initial; }
+    header > nav > .main-logo { width: 260px; grid-area: logo; justify-self: center; }
+    header > nav > .search { grid-area: search; justify-self: end; width: initial; }
+}
+@media screen and (max-width: 768px) {
+    header > .mo { display: block; position: absolute; z-index: 9999; top: 16px; left: 16px; width: 24px; height: 24px; cursor: pointer; }
+    header > .mo > span { position: absolute; height: 2px; background-color: #141414;}
+    header > .mo > span:nth-child(1) { width: 100%; top: 2px; transition: top 0.25s 0.25s, transform 0.25s, background-color 0.25s; }
+    header > .mo > span:nth-child(2) { width: 100%; top: 50%; transform: translateY(-50%); right: 0; transition: width 0.25s, right 0.25s, background-color 0.25s; }
+    header > .mo > span:nth-child(3) { width: 100%; bottom: 2px; transition: bottom 0.25s 0.25s, transform 0.25s, background-color 0.25s; }
+    header > .moIconAni > span:nth-child(1) {
+        top: calc(50% - 1px); 
+        transform: rotate(-45deg); 
+        transition: 
+            top 0.25s,
+            transform 0.25s 0.25s,
+            background-color 0.25s;
+    }
+    header > .moIconAni > span:nth-child(2) {
+        width: 0px; 
+        right: 50%;
+        transition: 
+            width 0.25s, 
+            right 0.25s,
+            background-color 0.25s;
+    }
+    header > .moIconAni > span:nth-child(3) { 
+        bottom: calc(50% - 1px); 
+        transform: rotate(45deg); 
+        transition: 
+            bottom 0.25s,
+            transform 0.25s 0.25s,
+            background-color 0.25s;
+    }
+    #contents > .category {
+        position: absolute;
+        flex-direction: column;
+        gap: 24px;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+        transition: all 0.5s cubic-bezier(0.790, 0.090, 0.245, 0.885);
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+    #contents > .category > span { font-size: 24px; }
+    #contents > .active { left: 0; }
+    #contents > .news-container > .news > .link {
+        grid: 
+            "text"
+            "img"
+            / 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    header { height: 140px; }
+    header > .mo { top: 10px; left: 10px; width: 20px; height: 20px; }
+    header > nav {
+        width: 100%;
+        display: grid;
+        grid: "logo" 1.5fr
+              "date" 1fr
+              "search" 1fr
+              /1fr;
+        padding: 10px 0;
+        border-bottom: 1px solid #cccccc;
+    }
+    header > nav > .todays-date { justify-self: center; }
+    header > nav > .search { justify-self: center; }
+    header > nav > .main-logo { width: 240px; align-self: self-end; }
+    #contents > .category { gap: 20px; }
+    #contents > .category > span { font-size: 16px; }
+}
